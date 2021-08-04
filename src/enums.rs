@@ -110,6 +110,8 @@ pub enum Class {
     CH = 3,
     /// Hesiod [Dyer 87]
     HS = 4,
+    // mDNS unicast response requested
+    MdnsUnicastResponse = 0x8001,
 }
 
 /// The QCLASS value according to RFC 1035
@@ -124,6 +126,8 @@ pub enum QueryClass {
     CH = 3,
     /// Hesiod [Dyer 87]
     HS = 4,
+    // mDNS unicast response requested
+    MdnsUnicastResponse = 0x8001,
     /// Any class
     Any = 255,
 }
